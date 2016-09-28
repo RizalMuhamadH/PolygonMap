@@ -91,7 +91,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                                        mMap.addPolygon(polygonOptions);
 
-                                       SphericalUtil.computeArea(points);
+                                       SphericalUtil.computeLength(points);
                                        Log.e("Point", String.valueOf(SphericalUtil.computeArea(points)));
                                    }
                                }
